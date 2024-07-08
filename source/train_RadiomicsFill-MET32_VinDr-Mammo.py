@@ -1053,7 +1053,7 @@ def main():
         rarity_scores_mass = 1 / (min_distances_mass + epsilon)
         weights_mass = rarity_scores_mass / rarity_scores_mass.sum()
 
-        # Set the weights for the normal group to 1/10th of the smallest weight in the mass group
+        # Set the weights for the normal group to 1/10 of the smallest weight in the mass group
         min_weight_mass = np.min(weights_mass)
         weights_normal = np.full(len(samples_normal), min_weight_mass / 2)
 
@@ -1105,7 +1105,7 @@ def main():
         rarity_scores_mass = 1 / (min_distances_mass + epsilon)
         weights_mass = rarity_scores_mass / rarity_scores_mass.sum()
 
-        # Set the weights for the normal group to 1/10th of the smallest weight in the mass group
+        # Set the weights for the normal group to 1/10 of the smallest weight in the mass group
         min_weight_mass = np.min(weights_mass)
         weights_normal = np.full(len(samples_normal), min_weight_mass / 2)
 
