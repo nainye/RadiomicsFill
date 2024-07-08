@@ -5,6 +5,13 @@
 ![overview](images/overview.png)
 ![result](images/result.png)
 
+## Datasets
+
+This project utilizes the VinDr-Mammo and INbreast datasets. You can download these datasets from the following links:
+
+- [VinDr-Mammo](https://www.physionet.org/content/vindr-mammo/1.0.0/)
+- [INbreast](https://www.kaggle.com/datasets/martholi/inbreast)
+
 ## Setting Up Development Environment
 
 To set up your development environment, follow the steps below:
