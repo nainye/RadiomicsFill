@@ -22,7 +22,7 @@ To set up your development environment, follow the steps below:
     Start a container from the pulled image. You can mount your project directory into the container for easy development:
 
     ```sh
-    docker run --gpus all -it -v /path/to/your/project:/workspace pytorch/pytorch:2.2.1-cuda11.8-cudnn8-devel
+    docker run --gpus all -it -v /path/to/your/project:/workspace --name radiomicsfill-mammo pytorch/pytorch:2.2.1-cuda11.8-cudnn8-devel /bin/bash
     ```
 
     Replace `/path/to/your/project` with the actual path to your project directory.
