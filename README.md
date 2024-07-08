@@ -9,8 +9,8 @@
 
 This project utilizes the VinDr-Mammo and INbreast datasets. You can download these datasets from the following links:
 
-- <a href="https://www.physionet.org/content/vindr-mammo/1.0.0/" target="_blank">VinDr-Mammo</a>
-- <a href="https://www.kaggle.com/datasets/martholi/inbreast" target="_blank">INbreast</a>
+- [VinDr-Mammo](https://www.physionet.org/content/vindr-mammo/1.0.0/)
+- [INbreast](https://www.kaggle.com/datasets/martholi/inbreast)
 
 ## Setting Up Development Environment
 
