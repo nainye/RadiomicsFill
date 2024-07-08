@@ -1,0 +1,12 @@
+accelerate==0.32.0
+diffusers==0.29.2
+matplotlib==3.9.1
+numpy==1.26.3
+pandas==2.2.2
+scikit-image==0.24.0
+scipy==1.14.0
+SimpleITK==2.3.1
+torchaudio==2.2.1
+torchvision==0.17.1
+transformers==4.42.3
+wandb==0.17.4
