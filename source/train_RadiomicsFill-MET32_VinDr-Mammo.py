@@ -1159,9 +1159,6 @@ def main():
     )
 
     # Prepare everything with our `accelerator`.
-    # unet, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
-    #     unet, optimizer, train_dataloader, lr_scheduler
-    # )
     unet, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
         unet, optimizer, train_dataloader, lr_scheduler
     )
@@ -1179,15 +1176,6 @@ def main():
     # Move text_encode and vae to gpu and cast to weight_dtype
     feature_encoder.to(accelerator.device, dtype=weight_dtype)
     vae.to(accelerator.device, dtype=weight_dtype)
-
-    # We need to recalculate our total training steps as the size of the training dataloader may have changed.
-    num_update_steps_per_epoch = math.ceil(
-        len(train_dataloader) / args.gradient_accumulation_steps
-    )
-    if overrode_max_train_steps:
-        args.max_train_steps = args.num_train_epochs * num_update_steps_per_epoch
-    # Afterwards we recalculate our number of training epochs
-    args.num_train_epochs = math.ceil(args.max_train_steps / num_update_steps_per_epoch)
 
     # We need to initialize the trackers we use, and also store our configuration.
     # The trackers initializes automatically on the main process.
@@ -1268,7 +1256,7 @@ def main():
 
         train_loss = 0.0
         for step, batch in enumerate(train_dataloader):
-            with accelerator.accumulate():
+            with accelerator.accumulate(unet):
                 if global_step % args.checkpointing_steps == 0:
                     if accelerator.is_main_process:
                         # _before_ saving state, check if this save would set us over the `checkpoints_total_limit`
@@ -1416,7 +1404,7 @@ def main():
 
                 # Gather the losses across all processes for logging (if we use distributed training).
                 avg_loss = accelerator.gather(loss.repeat(args.train_batch_size)).mean()
-                train_loss += avg_loss.item() / args.gradient_accumulation_steps
+                train_loss += avg_loss.item()
                 epoch_train_loss += train_loss
 
                 # Backpropagate
