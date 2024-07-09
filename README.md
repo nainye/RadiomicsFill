@@ -40,13 +40,7 @@ To set up your development environment, follow the steps below:
 
 3. **Install additional Python libraries:**
 
-    Once inside the Docker container, navigate to the mounted project directory:
-
-    ```sh
-    cd /workspace
-    ```
-
-    Then, install the required Python libraries using `pip`:
+    Install the required Python libraries using `pip`:
 
     ```sh
     pip install -r requirements.txt
