@@ -45,3 +45,18 @@ To set up your development environment, follow the steps below:
     ```sh
     pip install -r requirements.txt
     ```
+
+
+
+## Citation
+If you use this code for your research, please cite our papers.
+
+**BibTeX:**
+```
+@article{na2024radiomicsfill,
+  title={RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features},
+  author={Na, Inye and Kim, Jonghun and Ko, Eun Sook and Park, Hyunjin},
+  journal={arXiv preprint arXiv:2407.05683},
+  year={2024}
+}
+```
