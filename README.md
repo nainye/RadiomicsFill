@@ -45,8 +45,20 @@ To set up your development environment, follow the steps below:
     ```sh
     pip install -r requirements.txt
     ```
+    
+### Model Training
 
+1. **Train the MET (Tabular Encoder) model:**
 
+    ```sh
+    ./scripts/train_MET_VinDr-Mammo_embed32_enc6_dec3.sh
+    ```
+
+2. **Train the RadiomicsFill-MET model:**
+
+    ```sh
+    ./scripts/train_RadiomicsFill-MET32_VinDr-Mammo.sh
+    ```
 
 ## Citation
 If you use this code for your research, please cite our papers.
