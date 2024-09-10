@@ -33,7 +33,7 @@ $ accelerate launch train_RadiomicsFill-MET32_VinDr-Mammo.py \
   --output_dir=$OUTPUT_DIR
 
 Example `train_file.jsonl`, `plot_validation_file.jsonl`, and `val_file.jsonl`:
-    {"file_name": "0000_R_MLO.nii.gz", "mask_file_name": null, "otherSide_file_name": "0000_L_MLO_to_R_MLO.nii.gz", "additional_feature": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
+    {"file_name": "0000_R_MLO.nii.gz", "mask_file_name": null, "otherSide_file_name": "0000_R_MLO.nii.gz", "additional_feature": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]}
     ...   
    
 """
