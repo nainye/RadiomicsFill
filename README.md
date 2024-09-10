@@ -51,9 +51,8 @@ To preprocess the VinDr-Mammo dataset, run the following notebooks:
 
 - [Data Preprocessing](source/preprocessing_VinDr-Mammo.ipynb)
 - [Setting jsonl file](setting_jsonl_VinDr-Mammo.ipynb)
-  
-Ensure you have the data downloaded and placed in the correct directories as outlined in the preprocessing notebooks.
-    
+
+      
 ### Model Training
 
 1. **Train the MET (Tabular Encoder) model:**
