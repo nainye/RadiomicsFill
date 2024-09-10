@@ -50,7 +50,7 @@ To set up your development environment, follow the steps below:
 To preprocess the VinDr-Mammo dataset, run the following notebooks:
 
 - [Data Preprocessing](source/preprocessing_VinDr-Mammo.ipynb)
-- [Setting jsonl file](setting_jsonl_VinDr-Mammo.ipynb)
+- [Setting jsonl file](source/setting_jsonl_VinDr-Mammo.ipynb)
 
       
 ### Model Training
