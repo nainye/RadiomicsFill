@@ -1,6 +1,6 @@
 # RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features
 
-:fire:  Official implementation of "RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features" (MICCAI 2024)
+:fire:  Official implementation of "RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features" (MICCAI 2024 Spotlight)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2407.05683-red)](https://arxiv.org/pdf/2407.05683.pdf)
 
@@ -45,6 +45,14 @@ To set up your development environment, follow the steps below:
     ```sh
     pip install -r requirements.txt
     ```
+
+### Data Preprocessing
+To preprocess the VinDr-Mammo dataset, run the following notebooks:
+
+- [Data Preprocessing](source/preprocessing_VinDr-Mammo.ipynb)
+- [Setting jsonl file](setting_jsonl_VinDr-Mammo.ipynb)
+  
+Ensure you have the data downloaded and placed in the correct directories as outlined in the preprocessing notebooks.
     
 ### Model Training
 
