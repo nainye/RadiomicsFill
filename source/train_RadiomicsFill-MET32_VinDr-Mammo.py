@@ -719,7 +719,7 @@ class VinDrMammoDataset(Dataset):
 
         otherSide_image = (otherSide_image - otherSide_image.min()) / (otherSide_image.max() - otherSide_image.min())
 
-        image = np.stack([image[0], image[0], otherSide_image], axis=0)
+        image = np.stack([image, image, otherSide_image], axis=0)
 
         image = torch.tensor(image).unsqueeze(0)
         if mask is not None:
