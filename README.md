@@ -73,11 +73,13 @@ If you use this code for your research, please cite our papers.
 
 **BibTeX:**
 ```
-@article{na2024radiomicsfill,
+@inproceedings{na2024radiomicsfill,
   title={RadiomicsFill-Mammo: Synthetic Mammogram Mass Manipulation with Radiomics Features},
   author={Na, Inye and Kim, Jonghun and Ko, Eun Sook and Park, Hyunjin},
-  journal={arXiv preprint arXiv:2407.05683},
-  year={2024}
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={723--733},
+  year={2024},
+  organization={Springer}
 }
 ```
 
