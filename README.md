@@ -85,4 +85,4 @@ If you use this code for your research, please cite our papers.
 
 ## Contact
 
-For any inquiries or support, please contact us at `niy0404@skku.edu`.
+For any inquiries or support, please contact us at `niy0404@gmail.com`.
