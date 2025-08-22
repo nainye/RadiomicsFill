@@ -45,7 +45,7 @@ flipped_moving_image="${tmp_base}/${patid}_${filename_without_extension}_${type}
 output_prefix="${tmp_base}/${patid}_${filename_without_extension}_"
 registered_image="${output_base}/${patid}_${filename}"
 
-echo Moving Image,,, ${moving_image}
+echo "Moving image: ${moving_image}"
 
 # Check if input image files exist
 if [ ! -f "${fixed_image}" ] || [ ! -f "${moving_image}" ]; then
